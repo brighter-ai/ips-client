@@ -34,8 +34,8 @@ class JobArguments(BaseModel):
     region: Region = Region.european_union
     face: Optional[bool] = None
     license_plate: Optional[bool] = None
-    speed_optimized: Optional[bool] = None
-
+    speed_optimized: Optional[bool] = True
+    single_frame_optimized: Optional[bool] = True
 
 class JobPostResponse(BaseModel):
     output_id: UUID
